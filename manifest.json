@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Propelio and DataTree Acre Helper",
+  "version": "2.0",
+  "description": "Adds price per acre on Propelio comps and converts lot square feet to acres on DataTree.",
+  "content_scripts": [
+    {
+      "matches": ["https://genesis.propelio.com/*"],
+      "js": ["propelio.js"]
+    },
+    {
+      "matches": ["https://*.datatree.com/*"],
+      "js": ["datatree.js"]
+    }
+  ]
+}
